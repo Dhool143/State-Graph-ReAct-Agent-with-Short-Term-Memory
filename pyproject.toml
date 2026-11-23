@@ -1,0 +1,25 @@
+[project]
+name = "stategraph-react-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dhool143", email = "fathiyayoosef@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=1.2.23",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+stategraph-react-agent = "stategraph_react_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
